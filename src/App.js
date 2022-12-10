@@ -1,15 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const publish = () =>
+  {
+    console.log('Publish Was clicked');
+  }
   return (
+
+ 
     <div className="App">
       <nav className='sticky-section'>
         <h1>Blockchain Pastebin</h1>
-        <button className="btn">Login</button>
+        <button className="btn" onClick={publish} >Publish</button>
       </nav>
-      <div class="container">
-        <textarea id="page_form_content" name="paste [content]" placeholder="Paste Here!" rows="4 " cols="50" > </textarea>
+      <div className="container">
+        <textarea id="page_form_content" name="paste [content]" placeholder="Paste Here!"> </textarea>
         </div>
     </div>
   );
